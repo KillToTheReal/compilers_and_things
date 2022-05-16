@@ -60,12 +60,12 @@ angle = 60            # фиксированный угол поворота (в
 #angle = 90           # Для ковра или дракона
 #axiom = "FX"         # Дракон хартвея 1
 #axiom = "F-F-F-F"    # Ковер серпинского 1
-axiom = "F--F--F"     # Сжнежинка коха 1
+axiom = "F--F--F"     # Снежинка коха 1
 
 l_sys = LSystem2D(t, axiom, pen_width, f_len, angle)
-#l_sys.add_rules(("FX","FX+FY+"),("FY","-FX-FY")) #Дракон хартвея 2
+#l_sys.add_rules(("FX","FX+FY+"),("FY","-FX-FY")) # Дракон хартвея 2
 #l_sys.add_rules(("F","FF-F-F-F-FF")) # Ковер серпинского 2
 l_sys.add_rules(("F", "F+F--F+F")) #Снежинка коха 2
-l_sys.generate_path(1) #кол-во итераций. Для ковра оптимально 4, для снежинки 5, для дракона 12-13
+l_sys.generate_path(3) #кол-во итераций. Для ковра оптимально 4, для снежинки 5, для дракона 12-13
 print(l_sys.state)     #Вывод конечной инструкции 
 l_sys.draw_turtle( (0, 0), 0)
