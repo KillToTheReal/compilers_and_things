@@ -67,5 +67,5 @@ l_sys = LSystem2D(t, axiom, pen_width, f_len, angle)
 #l_sys.add_rules(("F","FF-F-F-F-FF")) # Ковер серпинского 2
 l_sys.add_rules(("F", "F+F--F+F")) #Снежинка коха 2
 l_sys.generate_path(1) #кол-во итераций. Для ковра оптимально 4, для снежинки 5, для дракона 12-13
-print(l_sys.state)
+print(l_sys.state)     #Вывод конечной инструкции 
 l_sys.draw_turtle( (0, 0), 0)
